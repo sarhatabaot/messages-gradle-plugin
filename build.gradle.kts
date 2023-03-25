@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.sarhatabaot.messages"
-version = "1.0.2"
+version = "1.0.3"
 
 gradlePlugin {
     website.set("https://github.com/sarhatabaot/messages-core")
@@ -29,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    implementation ("com.github.sarhatabaot:messages-core:1.5.3")
+    implementation ("com.github.sarhatabaot:messages-core:1.5.7")
 }
 
 java {
