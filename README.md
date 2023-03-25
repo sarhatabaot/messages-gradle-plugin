@@ -12,8 +12,16 @@ plugins {
 settings.gradle.kts: 
 ```kotlin
 pluginManagement {
+    resolutionStrategy {
+        eachPlugin {
+            requested.apply {
+                if ("$id".startsWith("com.github.sarhatabaot")) {
+                    useModule("com.github.sarhatabaot.messages-gradle-plugin:com.github.sarhatabaot.messages.gradle.plugin:$version")
+                }
+            }
+        }
+    }
     repositories {
-        mavenLocal()
         gradlePluginPortal()
         maven (
             url = uri("https://jitpack.io")
