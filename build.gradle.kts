@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.github.sarhatabaot.messages"
-version = "1.0.4"
+version = "1.0.5"
 
 gradlePlugin {
     website.set("https://github.com/sarhatabaot/messages-gradle-plugin")
