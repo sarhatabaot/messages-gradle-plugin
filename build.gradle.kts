@@ -5,11 +5,11 @@ plugins {
 }
 
 group = "com.github.sarhatabaot.messages"
-version = "1.0.3"
+version = "1.0.4"
 
 gradlePlugin {
-    website.set("https://github.com/sarhatabaot/messages-core")
-    vcsUrl.set("https://github.com/sarhatabaot/messages-core")
+    website.set("https://github.com/sarhatabaot/messages-gradle-plugin")
+    vcsUrl.set("https://github.com/sarhatabaot/messages-gradle-plugin.git")
     plugins {
         create("messagesPlugin") {
             id = "com.github.sarhatabaot.messages.messages-gradle-plugin"
@@ -24,12 +24,12 @@ gradlePlugin {
 repositories {
     mavenCentral()
     maven (
-        url = "https://jitpack.io"
+        url = uri("https://jitpack.io")
     )
 }
 
 dependencies {
-    implementation ("com.github.sarhatabaot:messages-core:1.5.7")
+    implementation(libs.messages.core)
 }
 
 java {
