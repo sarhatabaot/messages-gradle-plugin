@@ -2,6 +2,7 @@ plugins {
     id ("groovy")
     id ("com.gradle.plugin-publish") version "1.1.0"
     id ("java-gradle-plugin")
+    id ("maven-publish")
 }
 
 group = "com.github.sarhatabaot.messages"
