@@ -13,7 +13,7 @@ gradlePlugin {
     vcsUrl.set("https://github.com/sarhatabaot/messages-gradle-plugin.git")
     plugins {
         create("messagesPlugin") {
-            id = "com.github.sarhatabaot.messages.messages-gradle-plugin"
+            id = "com.github.sarhatabaot.messages"
             implementationClass = "com.github.sarhatabaot.messages.MessagesGradlePlugin"
             displayName = "Messages"
             description = "Generate data classes from yaml and json files. Useful for bukkit plugin development."
