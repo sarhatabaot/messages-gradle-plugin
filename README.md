@@ -1,6 +1,6 @@
 # Usage
 
-Until we get approved on the gradle plugin portal, you should clone this repo, and install the plugin.
+Until we get approved on the gradle plugin portal, use jitpack as detailed below:
 
 
 build.gradle.kts:
