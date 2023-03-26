@@ -6,7 +6,7 @@ Until we get approved on the gradle plugin portal, use jitpack as detailed below
 build.gradle.kts:
 ```kotlin
 plugins {
-    id("com.github.sarhatabaot.messages.messages-gradle-plugin") version "1.0.4"
+    id("com.github.sarhatabaot.messages") version "1.0.4"
 }
 ```
 settings.gradle.kts: 
