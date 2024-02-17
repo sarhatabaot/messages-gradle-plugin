@@ -1,16 +1,16 @@
 plugins {
     id ("groovy")
-    id ("com.gradle.plugin-publish") version "1.1.0"
-    id ("java-gradle-plugin")
+    id ("com.gradle.plugin-publish") version "1.2.1"
+    `java-gradle-plugin`
     id ("maven-publish")
 }
 
 group = "com.github.sarhatabaot.messages"
-version = "1.0.5"
+version = "1.1.1"
 
 gradlePlugin {
-    website.set("https://github.com/sarhatabaot/messages-gradle-plugin")
-    vcsUrl.set("https://github.com/sarhatabaot/messages-gradle-plugin.git")
+    website = "https://github.com/sarhatabaot/messages-gradle-plugin"
+    vcsUrl = "https://github.com/sarhatabaot/messages-gradle-plugin.git"
     plugins {
         create("messagesPlugin") {
             id = "com.github.sarhatabaot.messages"
@@ -23,6 +23,7 @@ gradlePlugin {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven (
         url = uri("https://jitpack.io")
@@ -35,7 +36,7 @@ dependencies {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(11))
+        languageVersion.set(JavaLanguageVersion.of(8))
     }
 }
 
