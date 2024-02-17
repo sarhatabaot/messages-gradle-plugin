@@ -11,19 +11,7 @@ import org.gradle.api.tasks.Input
 class Message extends MessagesPlugin<GradleException>{
     private final String name;
 
-//    private String sourceFolder
-//    private String targetPackage
-//    private FileType fileType
-//    private String basePath
-//    private String baseDir
-//    private String privateConstructor
-//    private boolean overwriteClasses
-
-//    Message(String name) {
-//        this.name = name
-//    }
-
-    Message(String name, String sourceFolder, String targetPackage, FileType fileType, String basePath, String baseDir, String privateConstructor, boolean overwriteClasses) {
+    Message(final String name, String basePath, String sourceFolder, String baseDir, FileType fileType, String targetPackage, String privateConstructor, boolean overwriteClasses) {
         super(basePath, sourceFolder, baseDir, fileType, targetPackage, privateConstructor, overwriteClasses)
         this.name = name;
     }
