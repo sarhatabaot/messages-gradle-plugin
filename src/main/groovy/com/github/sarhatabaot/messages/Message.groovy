@@ -9,11 +9,11 @@ import org.gradle.api.tasks.Input
  * @author sarhatabaot
  */
 class Message extends MessagesPlugin<GradleException>{
-    private final String name;
+    private final String name
 
     Message(final String name, String basePath, String sourceFolder, String baseDir, FileType fileType, String targetPackage, String privateConstructor, boolean overwriteClasses) {
         super(basePath, sourceFolder, baseDir, fileType, targetPackage, privateConstructor, overwriteClasses)
-        this.name = name;
+        this.name = name
     }
 
     @Input
